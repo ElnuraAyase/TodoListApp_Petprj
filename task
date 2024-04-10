@@ -1,0 +1,18 @@
+import React, { useState } from 'react';
+
+function TodoList() {
+  const [task, setTask] = useState('');
+  const [tasks, setTasks] = useState([]);
+
+  const handleInputChange = (event) => {
+    setTask(event.target.value);
+  };
+
+  const handleAddTask = () => {
+    if (task.trim() !== '') {
+      setTasks([...tasks, task]);
+      setTask('');
+    }
+  };
+
+
