@@ -20,3 +20,11 @@ class Timer {
     this.timerInterval = null;
   }
 
+  resetTimer() {
+    this.stopTimer();
+    this.elapsedTime = 0;
+    this.updateTimerDisplay();
+  }
+
+
+
