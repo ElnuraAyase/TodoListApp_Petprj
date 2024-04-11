@@ -36,6 +36,12 @@ class Timer {
     console.log(formattedTime);
   }
 }
+// Example usage:
+const timer = new Timer();
+timer.startTimer();
+setTimeout(() => {
+  timer.stopTimer();
+}, 5000); // Stop timer after 5 seconds
 
 
 
