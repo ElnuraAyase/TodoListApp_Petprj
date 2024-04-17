@@ -36,7 +36,7 @@ class Timer {
     console.log(formattedTime);
   }
 }
-// Example usage:
+// Examplese:
 const timer = new Timer();
 timer.startTimer();
 setTimeout(() => {
